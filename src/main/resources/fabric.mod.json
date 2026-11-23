@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "foodplanner",
+  "version": "${version}",
+  "name": "Food Planner",
+  "description": "How long your food will last at your pace, which food to eat right now (and a key to eat it), timely hunger warnings and a trip planner: how much food to take.",
+  "authors": [
+    "Dalkco"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/food-planner",
+    "sources": "https://github.com/Dalkco11/FoodPlanner",
+    "issues": "https://github.com/Dalkco11/FoodPlanner/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/foodplanner/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.dalkco.foodplanner.FoodPlannerClient"
+    ],
+    "modmenu": [
+      "com.dalkco.foodplanner.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "foodplanner.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=26.3",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
